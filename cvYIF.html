@@ -1,0 +1,100 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="YIF.js"></script>
+</head>
+<body>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="name">NAME</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="emailid">EMAIL ADDRESS</label>
+    <input type="text" id="emailid" name="emailid" placeholder="Your email id..">
+
+    <label for="address">ADDRESS</label>
+	<input type="text" id="address" name="adress" placeholder="Your address..">
+
+   
+
+    <label for="subject">EDUCATIONAL QUALIFICATION</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px">
+			</textarea>
+	
+	<label >JOBS</label><br><br>
+	<button class="open-button" onclick="openForm()">ADD JOB</button>
+
+						<div class="form-popup" id="myForm1">
+						  <form action="/action_page.php" class="form-container">
+							
+
+							<label for="email"><b>PROFILE</b></label>
+							<input type="text" placeholder="Enter Profile" name="prof" required>
+
+							<label for="psw"><b>ORGANIZATION</b></label>
+							<input type="password" placeholder="Enter organization" name="org" required>
+							
+							<label for="psw"><b>LOCATION</b></label>
+							<input type="password" placeholder="Enter Loacation" name="lcn" required>
+
+							<button type="submit" class="btn">SAVE</button>
+							<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+						  </form>
+						</div>
+
+    <label for="emailid">INTERNSHIPS</label><br>
+    <button class="open-button" onclick="openForm()">ADD INTERNSHIPS</button>
+
+						<div class="form-popup" id="myFORM2">
+						  <form action="/action_page.php" class="form-container">
+							
+
+							<label for="email"><b>PROFILE</b></label>
+							<input type="text" placeholder="Enter Profile" name="prof" required>
+
+							<label for="psw"><b>ORGANIZATION</b></label>
+							<input type="password" placeholder="Enter organization" name="org" required>
+							
+							<label for="psw"><b>LOCATION</b></label>
+							<input type="password" placeholder="Enter Loacation" name="lcn" required>
+
+							<button type="submit" class="btn">SAVE</button>
+							<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+						  </form>
+						</div><br><br>
+
+    <label for="address">POSITION OF RESPONSIBILITIES</label><br><br>
+	<button class="open-button" onclick="openForm()">ADD POSITION OF RESPONSIBILITIES</button>
+
+						<div class="form-popup" id="myForm3">
+						  <form action="/action_page.php" class="form-container">
+								<label> ADD DETAILS </label>
+								<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px">
+								</textarea>
+
+							
+							<button type="submit" class="btn">SAVE</button>
+							<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+						  </form>
+						</div>
+	
+	<label for="name">TRAININGS/COURSES</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+   <label for="subject">ACADEMICS/PERSONAL PROJECTS</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+	<label for="subject">SKILLS</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+	
+	<label for="subject">ACCOMPOLISHMENTS/ ADDITIONAL DETAILS</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+	<label for="subject">PORTFOLIO/ WORK SAMPLES</label><br><br>
+	<input type="file" id="myFile" name="filename" text="UPLOAD FILE"><br><br><br><br>
+	
+
+    <input type="submit" value="Submit">
+	
+  </form>
+</div>
+</body>
